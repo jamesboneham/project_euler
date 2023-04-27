@@ -1,0 +1,6 @@
+#+TITLE: Project Euler Solutions
+
+Repository containing solutions to various ProjectEuler.net problems in python,
+OCaml, Fortran, and Emacs Lisp. Solutions to problems past problem 100 are
+partially redacted, and the code to generate them is not shared. If you want to
+see the full solution code to these problems, message me.
