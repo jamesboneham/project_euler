@@ -6,6 +6,8 @@ in Fortran, and Emacs Lisp). Solutions to problems past problem 100 are
 partially redacted, and the code to generate them is not shared. If you want to
 see the full solution code to these problems, message me.
 
+* Problems Solved by Language
+
 |     | python | OCaml | Fortran | Emacs Lisp |
 |-----+--------+-------+---------+------------|
 |   1 | ✅     | ✅    | ✅      | ✅         |
@@ -201,3 +203,31 @@ see the full solution code to these problems, message me.
 | 751 |        | ✅    |         |            |
 | 770 | ✅     |       |         |            |
 | 816 | ✅     |       |         |            |
+
+* Python Solutions
+
+Dependencies:
+ + Python (>=3.8)
+ + Numpy
+ + Numba
+
+With the above dependencies, the python solutions can be run via the command
+=./main.py= from the =pe_python= directory in a terminal.
+
+* OCaml Solutions
+
+Dependencies:
++ OCaml (>=4.13)
++ Dune (>=2.9)
++ Core
++ Bignum
+
+From a terminal in the =pe_ocaml= directory, the OCaml solutions can be built
+using
+#+begin_src bash :eval never :exports code
+dune build
+#+end_src
+and then executed using the command
+#+begin_src bash :eval never :exports code
+dune exec pe_ocaml
+#+end_src
