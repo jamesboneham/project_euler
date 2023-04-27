@@ -11,7 +11,6 @@ def p001():
     n = 1000
     return (sum(range(3,n,3))+sum(range(5,n,5)) - sum(range(15,n,15)))
 
-
 def p002():
     a, b, c = 2, 8, 0
     while a <= 4000000:
@@ -275,7 +274,6 @@ def p013():
         20849603980134001723930671666823555245252804609722,
         53503534226472524250874054075591789781264330331690
     ]))[:10])
-
 
 def p014(nmax=100):
     cache = {1:1}
@@ -586,7 +584,6 @@ def p032():
                 (10*a + b) * (100*c + 10*d + e) == s)
     return sum(set((1000*i[-4] + 100*i[-3] + 10*i[-2] + i[-1])
                    for i in filter(check_perm, itt.permutations(range(1,10)))))
-
 
 def p033():
     """
@@ -1060,7 +1057,6 @@ def p045():
         continue
     return hi
 
-
 def p046(ulim=5780, n0=9):
     """
     Generates a set of primes using the Sieve of Eratosthenes, as well as a list
@@ -1442,7 +1438,6 @@ def p054():
         raise ValueError("Draws shouldn't happen!")
     return sum(1 for p1,p2 in hands if p1win(p1,p2))
 
-
 def p055():
     """
     Recursively checks a number to see if it is Lychrel, returning true once
@@ -1476,7 +1471,6 @@ def p056():
     67.5 ms ± 776 µs per loop (mean ± std. dev. of 7 runs, 10 loops each)
     """
     return max(sum(map(int, f"{a**b}")) for a in range(100) for b in range(100))
-
 
 def p057():
     """
@@ -1596,7 +1590,6 @@ def p060(plim=10000):
         continue
     raise ValueError("No set found")
 
-
 def p061():
     """
     Not pretty, or optimised, but gets the job done in reasonable time. Strategy
@@ -1670,8 +1663,6 @@ def p061():
             return out
         continue
     return
-
-
 
 def p062(ncubes=5):
     """
@@ -1834,7 +1825,6 @@ def p067():
                   [[int(n) for n in line.split()]
                    for line in open("./p067_triangle.txt").readlines()[::-1]])[0]
 
-
 def p068():
     """
     The solution here is predicated on the (correct, it turns out) assumption
@@ -1962,7 +1952,6 @@ def p071(lim=10**6):
         continue
     return c
 
-
 def p072(lim=1000000):
     """
     The length of the set is the length of the Farey sequence of order lim,
@@ -1988,7 +1977,6 @@ def p072(lim=1000000):
         continue
     return tots[1:].sum() - 1
 
-
 def p073(order=12000):
     """
     Thought I had a smart approach, but still takes well over a second to get
@@ -2012,7 +2000,6 @@ def p073(order=12000):
         n0,d0,n1,d1 = n1,d1,x*n1-n0,x*d1-d0
         continue
     return i
-
 
 def p074(lim):
     """
@@ -2045,8 +2032,6 @@ def p074(lim):
         cache.update({k:v for k,v in zip(chain, range(len0,0,-1))})
         return len0
     return sum(1 for i in range(1,lim) if get_chainlen(i)==60)
-
-
 
 def p075(lim = 1500000):
     """
