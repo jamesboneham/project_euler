@@ -1,0 +1,5 @@
+(executable
+ (package pe_ocaml)
+ (public_name pe_ocaml)
+ (name main)
+ (libraries core bignum pe_ocaml.lib))

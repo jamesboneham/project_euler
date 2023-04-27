@@ -1,0 +1,17 @@
+\message{ !name(<none>.tex)}
+\message{ !name(<none>) !offset(-2) }
+The key idea starts by noticing that for \(n \in (b - a, b]\) we have \(a + n > b\) and so \(F(a + n) = a + n -c\). Assuming that \(a > c\), we have \begin{align} F(n) & = F(a + F(a + F(a + F(a + n))))\\ & = F(a + F(a + F(a + a+n-c)))\\ & = F(a + F(a + 2a + n - 2c)) \\ & = F(a + 3a + n - 3c) \\ & = 4a + n - 4c. \end{align} Inductively, one can show that for \(n \in (b - (k+1)a, b -ka]\) we have \[F(n) = n + 4(k+1)a - (3k + 4)c.\]
+
+We now break up the computation of \(S(a,b,c) = \sum_{n=0}^{b}F(n)\) into partial sums over subintervals of the form \( \{ b-(k+1)a + 1, b-(k+1)a + 2, \ldots, b-ka\} \) where the above formula can be applied.
+
+Let \[m = \left\lfloor \frac{b}{a} \right\rfloor \] and note that \begin{align} \sum_{n=0}^{b - ma} F(n) & = \sum_{n=0}^{b-ma}\left(4(m+1)a - (3m+4)c + n \right)\\ & = (b - ma + 1)(4(m+1)a - (3m+4)c) + \frac{(b-ma)(b-ma+1)}{2} \end{align} This handles the first part of the sum defining \(S(a,b,c)\).
+
+Next, observe that \begin{align} \sum_{n=b - (k+1)a +1}^{b-ka}F(n) & = \sum_{n=b - (k+1)a +1}^{b-ka}\left( n + 4(k+1)a - (3k + 4)c\right)\\ & = \frac{(b-ka)(b-ka + 1) - (b - (k+1)a)(b - (k+1)a + 1)}{2}\\ & \quad + 4(k+1)a^{2} - (3k + 4)ac\\ & = ab - \frac{a(a-1)}{2} + (3k+4)a(a - c)\\ & =: P_{k}, \quad 0 \leq k \leq m-1.
+\end{align}
+
+We then compute \begin{align} S(a,b,c) & = \sum_{n=0}^{b - ma}F(n) + \sum_{k=0}^{m-1}P_{k}\\ & = (b - ma + 1)(4(m+1)a - (3m+4)c) + \frac{(b-ma)(b-ma+1)}{2}\\ & + \quad \sum_{k=0}^{m-1}\left(ab - \frac{a(a-1)}{2} + (3k+4)a(a - c)\right)\\ & = (b - ma + 1)(4(m+1)a - (3m+4)c) + \frac{(b-ma)(b-ma+1)}{2}\\ & + \quad m\left(ab - \frac{a(a-1)}{2} \right) + \frac{3m(m-1)}{2}a(a-c) + 4ma(a-c). \end{align}
+
+Since we only need the last \(9\) digits, we can first compute the remainder modulo \(10^{9}\) of each term above and then add them together. The whole process is quite fast.
+
+The moral of this story is that we had to de-recursify a function which is quite unwieldly, but still not ridiculous to deal with.
+\message{ !name(<none>.tex) !offset(-17) }

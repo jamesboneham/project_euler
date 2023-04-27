@@ -1,0 +1,7 @@
+(library
+ (name lib)
+ (public_name pe_ocaml.lib)
+ (inline_tests)
+ (preprocess (pps ppx_inline_test ppx_jane))
+ (libraries core bignum)
+ (modules (:standard)))

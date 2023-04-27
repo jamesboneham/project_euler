@@ -1,0 +1,12 @@
+(lang dune 2.9)
+(name pe_ocaml)
+(package
+ (name pe_ocaml)
+ (synopsis "Solutions to problems from projecteuler.net")
+ (description "\| Dune project containing solutions to the first hundred or so
+              "\| Project Euler problems (others available on request)
+ )
+ (depends
+   dune
+   core
+   bignum))
