@@ -1,4 +1,4 @@
-;;; projectEuler.el --- Solutions to Project Euler problems in elisp -*- lexical-binding: t; -*-
+;;; pe_elisp.el --- Solutions to Project Euler problems in elisp -*- lexical-binding: t; -*-
 ;;
 ;; Copyright (C) 2023 James Boneham
 ;;
@@ -8,7 +8,7 @@
 ;; Modified: March 12, 2023
 ;; Version: 0.0.1
 ;; Keywords: abbrev bib c calendar comm convenience data docs emulations extensions faces files frames games hardware help hypermedia i18n internal languages lisp local maint mail matching mouse multimedia news outlines processes terminals tex tools unix vc wp
-;; Homepage: https://github.com/boneham/projectEuler
+;; Homepage: https://github.com/bonehampe_elisp/
 ;; Package-Requires: ((emacs "24.3"))
 ;;
 ;; This file is not part of GNU Emacs.
@@ -21,14 +21,14 @@
 
 (require 'cl-lib)
 
-(cl-defun projectEuler-format-time (time)
+(cl-defun pe_elisp-format-time (time)
   "Select appropriate unit of TIME and format accordingly."
   (cond ((> 0.000001 time) (format "%.3s ns" (* time 1000000000)))
         ((> 0.001 time) (format "%.3s μs" (* time 1000000)))
         ((> 1.0 time) (format "%.3s ms" (* time 1000)))
         (t (format "%.3f s" time))))
 
-(cl-defmacro projectEuler-timeit (&rest body)
+(cl-defmacro pe_elisp-timeit (&rest body)
   "Execute BODY and return formatted result and execution time."
   `(let* ((tinit (float-time))
           (res ,@body)
@@ -39,9 +39,9 @@
                 (car (benchmark-run n ,@body))))
           (tavg (/ tn n)))
      (format "Result:\n\t%s\nAverage execution time (%s calls):\n\t%s"
-             res n (projectEuler-format-time tavg))))
+             res n (pe_elisp-format-time tavg))))
 
-(cl-defun projectEuler-eratosthenes (nmax)
+(cl-defun pe_elisp-eratosthenes (nmax)
   "Generate list of primes up to NMAX using the Sieve of Eratosthenes."
  (let ((arr (make-vector (+ nmax 1) t)))
   (cl-loop
@@ -55,19 +55,19 @@
    for i = 2 then (+ i 1) until (> i nmax)
    when (aref arr i) collect i)))
 
-(cl-defun projectEuler001 (&optional (nmax 1000))
+(cl-defun pe_elisp001 (&optional (nmax 1000))
   "Find the sum of all the multiples of 3 or 5 below NMAX (default 1000)."
   (let* ((n (- nmax 1)))
     (- (+ (cl-loop for x from 3 to n by 3 sum x)
           (cl-loop for x from 5 to n by 5 sum x))
        (cl-loop for x from 15 to n by 15 sum x))))
 
-(cl-defun projectEuler002 (&optional (nmax 4000000))
+(cl-defun pe_elisp002 (&optional (nmax 4000000))
   "Find the sum of the even-valued Fibonacci numbers up to NMAX (default 4000000)."
   (cl-loop for x = 2 then (+ y (* 4 x)) and y = 0 then x
          until (> x nmax) sum x))
 
-(cl-defun projectEuler003 (&optional (n0 600851475143))
+(cl-defun pe_elisp003 (&optional (n0 600851475143))
   "Find largest prime factor of N0."
   (cl-loop
    for fac = 3 then (+ fac 2)
@@ -78,7 +78,7 @@
    until (> fac n)
    finally return fac))
 
-(cl-defun projectEuler004 ()
+(cl-defun pe_elisp004 ()
   "Find the largest palindrome which is a product of two three digit numbers."
  (cl-labels
     ((digstonum
@@ -102,23 +102,23 @@
            for num = (digstonum stem)
            if (testpal num) return it)))
 
-(cl-defun projectEuler005 (&optional (nmax 20))
+(cl-defun pe_elisp005 (&optional (nmax 20))
   "Find lowest common multiple of integers up to NMAX."
     (apply #'cl-lcm (cl-loop for x from 2 to nmax collect x)))
 
-(cl-defun projectEuler006 (&optional (nmax 100))
+(cl-defun pe_elisp006 (&optional (nmax 100))
   "Difference between the squared sum and sum of squares for all integers up to NMAX."
     (cl-loop for i from 1 to nmax
          and s1 = 0 then (+ s1 i)
          and s2 = 0 then (+ s2 (* i i))
          finally return (- (* s1 s1) s2)))
 
-(cl-defun projectEuler007 (&optional (nmax 10001))
+(cl-defun pe_elisp007 (&optional (nmax 10001))
   "Return the NMAX prime number."
   (cl-letf* ((plim (car (cl-truncate (* nmax (log (* nmax (log nmax))))))))
-    (nth (- nmax 1) (projectEuler-eratosthenes plim))))
+    (nth (- nmax 1) (pe_elisp-eratosthenes plim))))
 
-(cl-defun projectEuler008 ()
+(cl-defun pe_elisp008 ()
   "Return the maximum 13 adjacent-digit product in following series."
   (cl-letf* ((nums '(7 3 1 6 7 1 7 6 5 3 1 3 3 0 6 2 4 9 1 9 2 2 5 1 1
                        9 6 7 4 4 2 6 5 7 4 7 4 2 3 5 5 3 4 9 1 9 4 9 3 4
@@ -175,7 +175,7 @@
                    finally return y)))
       (cl-reduce (lambda (x y) (max x (maxprod y))) groups :initial-value 0))))
 
-(cl-defun projectEuler009 (&optional (target 1000))
+(cl-defun pe_elisp009 (&optional (target 1000))
   "Find pythagorean triple with a + b + c = TARGET, and return product abc."
   (cl-loop
    for m from 2 to (cl-isqrt (/ target 2))
@@ -186,11 +186,11 @@
                  (- (expt m 4) (expt n 4))))
    return it))
 
-(cl-defun projectEuler010 (&optional (nmax 2000000))
+(cl-defun pe_elisp010 (&optional (nmax 2000000))
   "Sum all primes below NMAX."
-  (cl-reduce #'+ (projectEuler-eratosthenes nmax)))
+  (cl-reduce #'+ (pe_elisp-eratosthenes nmax)))
 
-(cl-defun projectEuler011 ()
+(cl-defun pe_elisp011 ()
   "Find maximum four adjacent-digit (up, down, or diagonal) product in following grid."
   (cl-letf*
       ((rows '((08 02 22 97 38 15 00 40 00 75 04 05 07 78 52 12 50 77 91 08)
@@ -248,7 +248,7 @@
       (cl-loop for g in (cl-mapcan #'group (cl-concatenate 'list rows cols diags1 diags2))
                maximize (maxprod g)))))
 
-(cl-defun projectEuler012 (&optional (ndivs 500) (nmax 15000))
+(cl-defun pe_elisp012 (&optional (ndivs 500) (nmax 15000))
   "Return the first triangular number with at least NDIVS divisors.
 Achieves this finding divisors of all numbers up to NMAX using a sieve. If the
 sieve is not large enough, and no answer is found, calls itself again with a
@@ -272,9 +272,9 @@ sieve twice as large."
               for sigma0i = (aref s i)
               if (> (* sigma0i (aref s j)) ndivs) return (* i j)
               else if (> (* sigma0i (aref s k)) ndivs) return (* i k) end)
-     (projectEuler012 ndivs (* nmax 2)))))
+     (pe_elisp012 ndivs (* nmax 2)))))
 
-(cl-defun projectEuler013 ()
+(cl-defun pe_elisp013 ()
   "Sum the following 100 50-digit numbers and return the first 10 digits."
   (string-to-number
    (substring
@@ -381,7 +381,7 @@ sieve twice as large."
                       53503534226472524250874054075591789781264330331690)))
     0 10)))
 
-(cl-defun projectEuler014 (&optional (nmax 1000000))
+(cl-defun pe_elisp014 (&optional (nmax 1000000))
   "Return the starting number with the longest Collatz chain below NMAX.
 \"max-specpdl-size\" and \"max-lisp-eval-depth\" are both temporarily increased
 as the default values result in recursion errors for the value of NMAX required
@@ -405,7 +405,7 @@ by the problem"
        then (let ((c (collatz n))) (if (> c cmax) `(,n ,c) `(,m ,cmax)))
        finally return m))))
 
-(cl-defun projectEuler015 (&optional (n 20))
+(cl-defun pe_elisp015 (&optional (n 20))
   "Return number of routes from top left to bottom right corner in N x N grid.
 The only allowed moves are either right or down"
   (cl-loop for r from 1 to n
@@ -416,11 +416,11 @@ The only allowed moves are either right or down"
                          finally return row)
            finally return (aref row n)))
 
-(cl-defun projectEuler016 (&optional (n0 (expt 2 1000)))
+(cl-defun pe_elisp016 (&optional (n0 (expt 2 1000)))
   "Sum the digits of N0."
  (cl-loop for n = n0 then (/ n 10) until (= n 0) sum (% n 10)))
 
-(cl-defun projectEuler017 ()
+(cl-defun pe_elisp017 ()
   "Solves problem 17.
 Return the number of letters used if all the numbers from 1 to 1000
 inclusive were written out in words."
@@ -435,7 +435,7 @@ inclusive were written out in words."
      (+ l1 l1000)
      (* 9 99 land))))
 
-(cl-defun projectEuler018 ()
+(cl-defun pe_elisp018 ()
   "Return max path sum through following triangle."
   (cl-labels ((mapfun (x y) (+ (car y) (max (car x) (cadr x))))
               (reducefun (x y) (cl-maplist #'mapfun x y)))
@@ -455,7 +455,7 @@ inclusive were written out in words."
                                   (95 64)
                                   (75))))))
 
-(cl-defun projectEuler019 ()
+(cl-defun pe_elisp019 ()
   "Solves problem 19.
 Return the number of Sundays which fell on the 1st of the month in the 21st century."
   (cl-loop
@@ -470,7 +470,7 @@ Return the number of Sundays which fell on the 1st of the month in the 21st cent
                    until (>= yr 2001)
                    count (= dom 1))))
 
-(cl-defun projectEuler020 (&optional (n0 100))
+(cl-defun pe_elisp020 (&optional (n0 100))
   "Sum the digits of N0 factorial."
   (cl-loop
    for n = (cl-loop
@@ -479,9 +479,43 @@ Return the number of Sundays which fell on the 1st of the month in the 21st cent
             finally return fac)
    then (/ n 10) until (= n 0) sum (% n 10)))
 
-(cl-defmacro projectEuler-run (pnum &rest args)
+(cl-defmacro pe_elisp-run (pnum &rest args)
   "Prints the result and execution time of problem PNUM with arguments ARGS."
-  `(projectEuler-timeit (,(intern (format "projectEuler%03d" pnum)) ,@args)))
+  `(pe_elisp-timeit (,(intern (format "pe_elisp%03d" pnum)) ,@args)))
 
-(provide 'projectEuler)
-;;; projectEuler.el ends here
+(cl-defun pe_elisp-read-pnum ()
+  "Interaction loop."
+  (cl-letf* ((pnumstr
+              (read-string "Enter problem number (or any non-numeric value to quit)\n >>> "))
+             (pnum (string-to-number pnumstr)))
+    (unless (zerop pnum)
+      (if (and (integerp pnum) (>= pnum 1))
+          (progn
+            (princ (cl-case pnum (1 (pe_elisp-run 1))
+                          (2 (pe_elisp-run 2))
+                          (3 (pe_elisp-run 3))
+                          (4 (pe_elisp-run 4))
+                          (5 (pe_elisp-run 5))
+                          (6 (pe_elisp-run 6))
+                          (7 (pe_elisp-run 7))
+                          (8 (pe_elisp-run 8))
+                          (9 (pe_elisp-run 9))
+                          (10 (pe_elisp-run 10))
+                          (11 (pe_elisp-run 11))
+                          (12 (pe_elisp-run 12))
+                          (13 (pe_elisp-run 13))
+                          (14 (pe_elisp-run 14))
+                          (15 (pe_elisp-run 15))
+                          (16 (pe_elisp-run 16))
+                          (17 (pe_elisp-run 17))
+                          (18 (pe_elisp-run 18))
+                          (19 (pe_elisp-run 19))
+                          (20 (pe_elisp-run 20))))
+            (princ "\n"))
+        (princ "Problem number must be positive integer\n"))
+      (pe_elisp-read-pnum))))
+
+(pe_elisp-read-pnum)
+
+(provide 'pe_elisp)
+;;; pe_elisp.el ends here
