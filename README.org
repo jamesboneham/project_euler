@@ -211,8 +211,11 @@ Dependencies:
  + Numpy
  + Numba
 
-With the above dependencies, the python solutions can be run via the command
-=./main.py= from the =pe_python= directory in a terminal.
+With the above dependencies, the python solutions can be run from the
+=pe_python= directory in a terminal via the command
+#+begin_src bash :eval never :exports code
+./main.py
+#+end_src
 
 * OCaml Solutions
 
@@ -231,3 +234,38 @@ and then executed using the command
 #+begin_src bash :eval never :exports code
 dune exec pe_ocaml
 #+end_src
+
+* Fortran Solutions
+
+Dependencies
++ Fortran90
++ gfortran
++ CMake
+
+From a terminal in the =pe_fortran= directory, the Fortran solutions can be
+built using
+#+begin_src bash :eval never :exports code
+mkdir build
+cd build
+cmake --build .
+cmake ..
+#+end_src
+
+The solutions can then be run from the =pe_fortran/build= directory using
+#+begin_src bash :eval never :exports code
+./ProjectEulerFortran
+#+end_src
+
+* Emacs Lisp Solutions
+
+Dependencies
++ Emacs (>=24.3)
+
+From a terminal in the =pe_elisp= directory, the Emacs Lisp solutions can be run
+using the command
+#+begin_src bash :eval never :exports code
+emacs --quick --batch --load=pe_elisp.el
+#+end_src
+
+The flags above cause Emacs to start with minimum customisations (=--quick=),
+and to run =pe_elisp.el= (=--load=pe_elisp.el=) noninteractively (=--batch=).
