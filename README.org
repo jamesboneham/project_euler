@@ -10,199 +10,199 @@ see the full solution code to these problems, message me.
 
 |     | python | OCaml | Fortran | Emacs Lisp |
 |-----+--------+-------+---------+------------|
-|   1 | ✅     | ✅    | ✅      | ✅         |
-|   2 | ✅     | ✅    | ✅      | ✅         |
-|   3 | ✅     | ✅    | ✅      | ✅         |
-|   4 | ✅     | ✅    | ✅      | ✅         |
-|   5 | ✅     | ✅    | ✅      | ✅         |
-|   6 | ✅     | ✅    | ✅      | ✅         |
-|   7 | ✅     | ✅    | ✅      | ✅         |
-|   8 | ✅     | ✅    | ✅      | ✅         |
-|   9 | ✅     | ✅    | ✅      | ✅         |
-|  10 | ✅     | ✅    | ✅      | ✅         |
-|  11 | ✅     | ✅    | ✅      | ✅         |
-|  12 | ✅     | ✅    | ✅      | ✅         |
-|  13 | ✅     | ✅    | ✅      | ✅         |
-|  14 | ✅     | ✅    | ✅      | ✅         |
-|  15 | ✅     | ✅    | ✅      | ✅         |
-|  16 | ✅     | ✅    | ✅      | ✅         |
-|  17 | ✅     | ✅    | ✅      | ✅         |
-|  18 | ✅     | ✅    | ✅      | ✅         |
-|  19 | ✅     | ✅    | ✅      | ✅         |
-|  20 | ✅     | ✅    | ✅      | ✅         |
-|  21 | ✅     | ✅    |         |            |
-|  22 | ✅     | ✅    |         |            |
-|  23 | ✅     | ✅    |         |            |
-|  24 | ✅     | ✅    |         |            |
-|  25 | ✅     | ✅    |         |            |
-|  26 | ✅     | ✅    |         |            |
-|  27 | ✅     | ✅    |         |            |
-|  28 | ✅     | ✅    |         |            |
-|  29 | ✅     | ✅    |         |            |
-|  30 | ✅     | ✅    |         |            |
-|  31 | ✅     | ✅    |         |            |
-|  32 | ✅     | ✅    |         |            |
-|  33 | ✅     | ✅    |         |            |
-|  34 | ✅     | ✅    |         |            |
-|  35 | ✅     | ✅    |         |            |
-|  36 | ✅     | ✅    |         |            |
-|  37 | ✅     | ✅    |         |            |
-|  38 | ✅     | ✅    |         |            |
-|  39 | ✅     | ✅    |         |            |
-|  40 | ✅     | ✅    |         |            |
-|  41 | ✅     | ✅    |         |            |
-|  42 | ✅     | ✅    |         |            |
-|  43 | ✅     | ✅    |         |            |
-|  44 | ✅     | ✅    |         |            |
-|  45 | ✅     | ✅    |         |            |
-|  46 | ✅     | ✅    |         |            |
-|  47 | ✅     | ✅    |         |            |
-|  48 | ✅     | ✅    |         |            |
-|  49 | ✅     | ✅    |         |            |
-|  50 | ✅     | ✅    |         |            |
-|  51 | ✅     | ✅    |         |            |
-|  52 | ✅     | ✅    |         |            |
-|  53 | ✅     | ✅    |         |            |
-|  54 | ✅     | ✅    |         |            |
-|  55 | ✅     | ✅    |         |            |
-|  56 | ✅     | ✅    |         |            |
-|  57 | ✅     | ✅    |         |            |
-|  58 | ✅     | ✅    |         |            |
-|  59 | ✅     | ✅    |         |            |
-|  60 | ✅     | ✅    |         |            |
-|  61 | ✅     | ✅    |         |            |
-|  62 | ✅     | ✅    |         |            |
-|  63 | ✅     | ✅    |         |            |
-|  64 | ✅     | ✅    |         |            |
-|  65 | ✅     | ✅    |         |            |
-|  66 | ✅     | ✅    |         |            |
-|  67 | ✅     | ✅    |         |            |
-|  68 | ✅     | ✅    |         |            |
-|  69 | ✅     | ✅    |         |            |
-|  70 | ✅     | ✅    |         |            |
-|  71 | ✅     | ✅    |         |            |
-|  72 | ✅     | ✅    |         |            |
-|  73 | ✅     | ✅    |         |            |
-|  74 | ✅     | ✅    |         |            |
-|  75 | ✅     | ✅    |         |            |
-|  76 |        | ✅    |         |            |
-|  77 |        | ✅    |         |            |
-|  78 |        | ✅    |         |            |
-|  79 |        | ✅    |         |            |
-|  80 |        | ✅    |         |            |
-|  81 |        | ✅    |         |            |
-|  82 |        | ✅    |         |            |
-|  83 |        | ✅    |         |            |
-|  84 |        | ✅    |         |            |
-|  85 |        | ✅    |         |            |
-|  86 |        | ✅    |         |            |
-|  87 |        | ✅    |         |            |
-|  88 |        | ✅    |         |            |
-|  89 |        | ✅    |         |            |
-|  90 |        | ✅    |         |            |
-|  91 |        | ✅    |         |            |
-|  92 |        | ✅    |         |            |
-|  93 |        | ✅    |         |            |
-|  94 |        | ✅    |         |            |
-|  95 |        | ✅    |         |            |
-|  96 |        | ✅    |         |            |
-|  97 |        | ✅    |         |            |
-|  98 |        | ✅    |         |            |
-|  99 |        | ✅    |         |            |
-| 100 |        | ✅    |         |            |
-| 101 |        | ✅    |         |            |
-| 102 |        | ✅    |         |            |
-| 103 |        | ✅    |         |            |
-| 104 |        | ✅    |         |            |
-| 105 |        | ✅    |         |            |
-| 106 |        | ✅    |         |            |
-| 107 |        | ✅    |         |            |
-| 108 |        | ✅    |         |            |
-| 109 |        | ✅    |         |            |
-| 110 |        | ✅    |         |            |
-| 111 |        | ✅    |         |            |
-| 112 |        | ✅    |         |            |
-| 113 |        | ✅    |         |            |
-| 114 |        | ✅    |         |            |
-| 115 |        | ✅    |         |            |
-| 116 |        | ✅    |         |            |
-| 117 |        | ✅    |         |            |
-| 118 |        | ✅    |         |            |
-| 119 |        | ✅    |         |            |
-| 120 |        | ✅    |         |            |
-| 121 |        | ✅    |         |            |
-| 122 |        | ✅    |         |            |
-| 123 |        | ✅    |         |            |
-| 124 |        | ✅    |         |            |
-| 125 |        | ✅    |         |            |
-| 126 |        | ✅    |         |            |
-| 127 |        | ✅    |         |            |
-| 128 |        | ✅    |         |            |
-| 129 |        | ✅    |         |            |
-| 130 |        | ✅    |         |            |
-| 131 |        | ✅    |         |            |
-| 132 |        | ✅    |         |            |
-| 133 |        | ✅    |         |            |
-| 134 |        | ✅    |         |            |
-| 135 |        | ✅    |         |            |
-| 136 |        | ✅    |         |            |
-| 137 |        | ✅    |         |            |
-| 138 |        | ✅    |         |            |
-| 139 |        | ✅    |         |            |
-| 140 |        | ✅    |         |            |
-| 141 |        | ✅    |         |            |
-| 142 |        | ✅    |         |            |
-| 143 |        | ✅    |         |            |
-| 144 |        | ✅    |         |            |
-| 145 |        | ✅    |         |            |
-| 146 |        | ✅    |         |            |
-| 147 |        | ✅    |         |            |
-| 148 |        | ✅    |         |            |
-| 149 |        | ✅    |         |            |
-| 150 |        | ✅    |         |            |
-| 151 |        | ✅    |         |            |
-| 155 |        | ✅    |         |            |
-| 158 | ✅     |       |         |            |
-| 161 |        | ✅    |         |            |
-| 164 | ✅     | ✅    |         |            |
-| 169 |        | ✅    |         |            |
-| 173 | ✅     |       |         |            |
-| 174 |        | ✅    |         |            |
-| 179 | ✅     |       |         |            |
-| 185 | ✅     |       |         |            |
-| 188 | ✅     |       |         |            |
-| 190 | ✅     |       |         |            |
-| 191 | ✅     | ✅    |         |            |
-| 199 |        | ✅    |         |            |
-| 204 | ✅     |       |         |            |
-| 205 | ✅     |       |         |            |
-| 206 | ✅     |       |         |            |
-| 208 |        | ✅    |         |            |
-| 215 |        | ✅    |         |            |
-| 225 | ✅     |       |         |            |
-| 226 | ✅     |       |         |            |
-| 227 | ✅     |       |         |            |
-| 233 |        | ✅    |         |            |
-| 235 | ✅     |       |         |            |
-| 267 | ✅     |       |         |            |
-| 298 | ✅     |       |         |            |
-| 323 | ✅     |       |         |            |
-| 345 | ✅     |       |         |            |
-| 387 | ✅     |       |         |            |
-| 394 | ✅     |       |         |            |
-| 395 | ✅     |       |         |            |
-| 493 | ✅     |       |         |            |
-| 587 | ✅     |       |         |            |
-| 607 | ✅     |       |         |            |
-| 622 | ✅     |       |         |            |
-| 679 | ✅     |       |         |            |
-| 684 |        | ✅    |         |            |
-| 692 |        | ✅    |         |            |
-| 700 |        | ✅    |         |            |
-| 719 |        | ✅    |         |            |
-| 751 |        | ✅    |         |            |
-| 770 | ✅     |       |         |            |
-| 816 | ✅     |       |         |            |
+|   [[https://projecteuler.net/problem=1][1]] | ✅     | ✅    | ✅      | ✅         |
+|   [[https://projecteuler.net/problem=2][2]] | ✅     | ✅    | ✅      | ✅         |
+|   [[https://projecteuler.net/problem=3][3]] | ✅     | ✅    | ✅      | ✅         |
+|   [[https://projecteuler.net/problem=4][4]] | ✅     | ✅    | ✅      | ✅         |
+|   [[https://projecteuler.net/problem=5][5]] | ✅     | ✅    | ✅      | ✅         |
+|   [[https://projecteuler.net/problem=6][6]] | ✅     | ✅    | ✅      | ✅         |
+|   [[https://projecteuler.net/problem=7][7]] | ✅     | ✅    | ✅      | ✅         |
+|   [[https://projecteuler.net/problem=8][8]] | ✅     | ✅    | ✅      | ✅         |
+|   [[https://projecteuler.net/problem=9][9]] | ✅     | ✅    | ✅      | ✅         |
+|  [[https://projecteuler.net/problem=10][10]] | ✅     | ✅    | ✅      | ✅         |
+|  [[https://projecteuler.net/problem=11][11]] | ✅     | ✅    | ✅      | ✅         |
+|  [[https://projecteuler.net/problem=12][12]] | ✅     | ✅    | ✅      | ✅         |
+|  [[https://projecteuler.net/problem=13][13]] | ✅     | ✅    | ✅      | ✅         |
+|  [[https://projecteuler.net/problem=14][14]] | ✅     | ✅    | ✅      | ✅         |
+|  [[https://projecteuler.net/problem=15][15]] | ✅     | ✅    | ✅      | ✅         |
+|  [[https://projecteuler.net/problem=16][16]] | ✅     | ✅    | ✅      | ✅         |
+|  [[https://projecteuler.net/problem=17][17]] | ✅     | ✅    | ✅      | ✅         |
+|  [[https://projecteuler.net/problem=18][18]] | ✅     | ✅    | ✅      | ✅         |
+|  [[https://projecteuler.net/problem=19][19]] | ✅     | ✅    | ✅      | ✅         |
+|  [[https://projecteuler.net/problem=20][20]] | ✅     | ✅    | ✅      | ✅         |
+|  [[https://projecteuler.net/problem=21][21]] | ✅     | ✅    |         |            |
+|  [[https://projecteuler.net/problem=22][22]] | ✅     | ✅    |         |            |
+|  [[https://projecteuler.net/problem=23][23]] | ✅     | ✅    |         |            |
+|  [[https://projecteuler.net/problem=24][24]] | ✅     | ✅    |         |            |
+|  [[https://projecteuler.net/problem=25][25]] | ✅     | ✅    |         |            |
+|  [[https://projecteuler.net/problem=26][26]] | ✅     | ✅    |         |            |
+|  [[https://projecteuler.net/problem=27][27]] | ✅     | ✅    |         |            |
+|  [[https://projecteuler.net/problem=28][28]] | ✅     | ✅    |         |            |
+|  [[https://projecteuler.net/problem=29][29]] | ✅     | ✅    |         |            |
+|  [[https://projecteuler.net/problem=30][30]] | ✅     | ✅    |         |            |
+|  [[https://projecteuler.net/problem=31][31]] | ✅     | ✅    |         |            |
+|  [[https://projecteuler.net/problem=32][32]] | ✅     | ✅    |         |            |
+|  [[https://projecteuler.net/problem=33][33]] | ✅     | ✅    |         |            |
+|  [[https://projecteuler.net/problem=34][34]] | ✅     | ✅    |         |            |
+|  [[https://projecteuler.net/problem=35][35]] | ✅     | ✅    |         |            |
+|  [[https://projecteuler.net/problem=36][36]] | ✅     | ✅    |         |            |
+|  [[https://projecteuler.net/problem=37][37]] | ✅     | ✅    |         |            |
+|  [[https://projecteuler.net/problem=38][38]] | ✅     | ✅    |         |            |
+|  [[https://projecteuler.net/problem=39][39]] | ✅     | ✅    |         |            |
+|  [[https://projecteuler.net/problem=40][40]] | ✅     | ✅    |         |            |
+|  [[https://projecteuler.net/problem=41][41]] | ✅     | ✅    |         |            |
+|  [[https://projecteuler.net/problem=42][42]] | ✅     | ✅    |         |            |
+|  [[https://projecteuler.net/problem=43][43]] | ✅     | ✅    |         |            |
+|  [[https://projecteuler.net/problem=44][44]] | ✅     | ✅    |         |            |
+|  [[https://projecteuler.net/problem=45][45]] | ✅     | ✅    |         |            |
+|  [[https://projecteuler.net/problem=46][46]] | ✅     | ✅    |         |            |
+|  [[https://projecteuler.net/problem=47][47]] | ✅     | ✅    |         |            |
+|  [[https://projecteuler.net/problem=48][48]] | ✅     | ✅    |         |            |
+|  [[https://projecteuler.net/problem=49][49]] | ✅     | ✅    |         |            |
+|  [[https://projecteuler.net/problem=50][50]] | ✅     | ✅    |         |            |
+|  [[https://projecteuler.net/problem=51][51]] | ✅     | ✅    |         |            |
+|  [[https://projecteuler.net/problem=52][52]] | ✅     | ✅    |         |            |
+|  [[https://projecteuler.net/problem=53][53]] | ✅     | ✅    |         |            |
+|  [[https://projecteuler.net/problem=54][54]] | ✅     | ✅    |         |            |
+|  [[https://projecteuler.net/problem=55][55]] | ✅     | ✅    |         |            |
+|  [[https://projecteuler.net/problem=56][56]] | ✅     | ✅    |         |            |
+|  [[https://projecteuler.net/problem=57][57]] | ✅     | ✅    |         |            |
+|  [[https://projecteuler.net/problem=58][58]] | ✅     | ✅    |         |            |
+|  [[https://projecteuler.net/problem=59][59]] | ✅     | ✅    |         |            |
+|  [[https://projecteuler.net/problem=60][60]] | ✅     | ✅    |         |            |
+|  [[https://projecteuler.net/problem=61][61]] | ✅     | ✅    |         |            |
+|  [[https://projecteuler.net/problem=62][62]] | ✅     | ✅    |         |            |
+|  [[https://projecteuler.net/problem=63][63]] | ✅     | ✅    |         |            |
+|  [[https://projecteuler.net/problem=64][64]] | ✅     | ✅    |         |            |
+|  [[https://projecteuler.net/problem=65][65]] | ✅     | ✅    |         |            |
+|  [[https://projecteuler.net/problem=66][66]] | ✅     | ✅    |         |            |
+|  [[https://projecteuler.net/problem=67][67]] | ✅     | ✅    |         |            |
+|  [[https://projecteuler.net/problem=68][68]] | ✅     | ✅    |         |            |
+|  [[https://projecteuler.net/problem=69][69]] | ✅     | ✅    |         |            |
+|  [[https://projecteuler.net/problem=70][70]] | ✅     | ✅    |         |            |
+|  [[https://projecteuler.net/problem=71][71]] | ✅     | ✅    |         |            |
+|  [[https://projecteuler.net/problem=72][72]] | ✅     | ✅    |         |            |
+|  [[https://projecteuler.net/problem=73][73]] | ✅     | ✅    |         |            |
+|  [[https://projecteuler.net/problem=74][74]] | ✅     | ✅    |         |            |
+|  [[https://projecteuler.net/problem=75][75]] | ✅     | ✅    |         |            |
+|  [[https://projecteuler.net/problem=76][76]] |        | ✅    |         |            |
+|  [[https://projecteuler.net/problem=77][77]] |        | ✅    |         |            |
+|  [[https://projecteuler.net/problem=78][78]] |        | ✅    |         |            |
+|  [[https://projecteuler.net/problem=79][79]] |        | ✅    |         |            |
+|  [[https://projecteuler.net/problem=80][80]] |        | ✅    |         |            |
+|  [[https://projecteuler.net/problem=81][81]] |        | ✅    |         |            |
+|  [[https://projecteuler.net/problem=82][82]] |        | ✅    |         |            |
+|  [[https://projecteuler.net/problem=83][83]] |        | ✅    |         |            |
+|  [[https://projecteuler.net/problem=84][84]] |        | ✅    |         |            |
+|  [[https://projecteuler.net/problem=85][85]] |        | ✅    |         |            |
+|  [[https://projecteuler.net/problem=86][86]] |        | ✅    |         |            |
+|  [[https://projecteuler.net/problem=87][87]] |        | ✅    |         |            |
+|  [[https://projecteuler.net/problem=88][88]] |        | ✅    |         |            |
+|  [[https://projecteuler.net/problem=89][89]] |        | ✅    |         |            |
+|  [[https://projecteuler.net/problem=90][90]] |        | ✅    |         |            |
+|  [[https://projecteuler.net/problem=91][91]] |        | ✅    |         |            |
+|  [[https://projecteuler.net/problem=92][92]] |        | ✅    |         |            |
+|  [[https://projecteuler.net/problem=93][93]] |        | ✅    |         |            |
+|  [[https://projecteuler.net/problem=94][94]] |        | ✅    |         |            |
+|  [[https://projecteuler.net/problem=95][95]] |        | ✅    |         |            |
+|  [[https://projecteuler.net/problem=96][96]] |        | ✅    |         |            |
+|  [[https://projecteuler.net/problem=97][97]] |        | ✅    |         |            |
+|  [[https://projecteuler.net/problem=98][98]] |        | ✅    |         |            |
+|  [[https://projecteuler.net/problem=99][99]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=100][100]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=101][101]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=102][102]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=103][103]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=104][104]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=105][105]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=106][106]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=107][107]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=108][108]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=109][109]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=110][110]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=111][111]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=112][112]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=113][113]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=114][114]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=115][115]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=116][116]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=117][117]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=118][118]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=119][119]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=120][120]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=121][121]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=122][122]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=123][123]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=124][124]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=125][125]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=126][126]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=127][127]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=128][128]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=129][129]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=130][130]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=131][131]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=132][132]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=133][133]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=134][134]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=135][135]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=136][136]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=137][137]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=138][138]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=139][139]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=140][140]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=141][141]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=142][142]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=143][143]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=144][144]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=145][145]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=146][146]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=147][147]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=148][148]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=149][149]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=150][150]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=151][151]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=155][155]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=158][158]] | ✅     |       |         |            |
+| [[https://projecteuler.net/problem=161][161]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=164][164]] | ✅     | ✅    |         |            |
+| [[https://projecteuler.net/problem=169][169]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=173][173]] | ✅     |       |         |            |
+| [[https://projecteuler.net/problem=174][174]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=179][179]] | ✅     |       |         |            |
+| [[https://projecteuler.net/problem=185][185]] | ✅     |       |         |            |
+| [[https://projecteuler.net/problem=188][188]] | ✅     |       |         |            |
+| [[https://projecteuler.net/problem=190][190]] | ✅     |       |         |            |
+| [[https://projecteuler.net/problem=191][191]] | ✅     | ✅    |         |            |
+| [[https://projecteuler.net/problem=199][199]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=204][204]] | ✅     |       |         |            |
+| [[https://projecteuler.net/problem=205][205]] | ✅     |       |         |            |
+| [[https://projecteuler.net/problem=206][206]] | ✅     |       |         |            |
+| [[https://projecteuler.net/problem=208][208]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=215][215]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=225][225]] | ✅     |       |         |            |
+| [[https://projecteuler.net/problem=226][226]] | ✅     |       |         |            |
+| [[https://projecteuler.net/problem=227][227]] | ✅     |       |         |            |
+| [[https://projecteuler.net/problem=233][233]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=235][235]] | ✅     |       |         |            |
+| [[https://projecteuler.net/problem=267][267]] | ✅     |       |         |            |
+| [[https://projecteuler.net/problem=298][298]] | ✅     |       |         |            |
+| [[https://projecteuler.net/problem=323][323]] | ✅     |       |         |            |
+| [[https://projecteuler.net/problem=345][345]] | ✅     |       |         |            |
+| [[https://projecteuler.net/problem=387][387]] | ✅     |       |         |            |
+| [[https://projecteuler.net/problem=394][394]] | ✅     |       |         |            |
+| [[https://projecteuler.net/problem=395][395]] | ✅     |       |         |            |
+| [[https://projecteuler.net/problem=493][493]] | ✅     |       |         |            |
+| [[https://projecteuler.net/problem=587][587]] | ✅     |       |         |            |
+| [[https://projecteuler.net/problem=607][607]] | ✅     |       |         |            |
+| [[https://projecteuler.net/problem=622][622]] | ✅     |       |         |            |
+| [[https://projecteuler.net/problem=679][679]] | ✅     |       |         |            |
+| [[https://projecteuler.net/problem=684][684]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=692][692]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=700][700]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=719][719]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=751][751]] |        | ✅    |         |            |
+| [[https://projecteuler.net/problem=770][770]] | ✅     |       |         |            |
+| [[https://projecteuler.net/problem=816][816]] | ✅     |       |         |            |
 
 * Python Solutions
 
