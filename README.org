@@ -1,4 +1,5 @@
 #+TITLE: Project Euler Solutions
+#+HTML_HEAD: <base target="_blank">
 
 Repository containing solutions to various [[https://www.projecteuler.net][ProjectEuler.net]] problems (primarily
 in python and OCaml, but solutions to the first few problems are also provided
