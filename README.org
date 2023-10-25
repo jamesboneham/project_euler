@@ -270,3 +270,13 @@ emacs --quick --batch --load=pe_elisp.el
 
 The flags above cause Emacs to start with minimum customisations (=--quick=),
 and to run =pe_elisp.el= (=--load=pe_elisp.el=) noninteractively (=--batch=).
+
+* Q Solutions
+
+Dependencies
++ q/kdb+ 4.0
+
+From a terminal in the =pe_q= directory, the q solutions can be run using the command
+#+begin_src bash :eval never :exports code
+q pe.q -q -b -u 1
+#+end_src
