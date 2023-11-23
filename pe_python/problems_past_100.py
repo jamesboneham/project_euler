@@ -36,6 +36,13 @@ def p179(nmax = 10**7):
     """
     return  "986*** (full answer redacted in accordance with project euler rules)"
 
+def p183(nmax=10000):
+    """
+    Problem not shared in accordance with project euler rules. If you want to see the code,
+    message me.
+    """
+    return "48861*** (full answer redacted in accordance with project euler rules)"
+
 def p185(guesses=[(5616185650518293, 2), (3847439647293047, 1), (5855462940810587, 3),
                   (9742855507068353, 3), (4296849643607543, 3), (3174248439465858, 1),
                   (4513559094146117, 2), (7890971548908067, 3), (8157356344118483, 1),
@@ -50,6 +57,13 @@ def p185(guesses=[(5616185650518293, 2), (3847439647293047, 1), (585546294081058
     message me.
     """
     return  "4640261571849*** (full answer redacted in accordance with project euler rules)"
+
+def p186(pct=99):
+    """
+    Problem not shared in accordance with project euler rules. If you want to see the code,
+    message me.
+    """
+    return "2325*** (full answer redacted in accordance with project euler rules)"
 
 def p188(a=1777, k0=1855, ndigs=8):
     """
